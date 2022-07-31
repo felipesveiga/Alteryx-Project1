@@ -1,0 +1,995 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="318" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Completed Returns - August 2021.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Completed Returns - August 2021.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ORDER_ID" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Completed Returns - August 2021.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="RETURNED" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Completed Returns - August 2021.xlsx|||`Sheet1$`" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="918" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CUSTOMERS.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="FirstName" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="LastName" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="UserName" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Email" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Street" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="PostCode" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Phone" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\CUSTOMERS.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="822" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Orders Table.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ORDER_ID" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="PRODUCT_SKU" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="QUANTITY" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="ORDER_DATE" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="DateTime" />
+            <Field name="CUSTOMER_ID" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="RETURNED" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="Bool" />
+            <Field name="PRODUCT_NAME" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="PRODUCT_DESC" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="PRODUCT_PRICE" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="PRODUCT_CATEGORY" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\Orders Table.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="318" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>STORE_TRANSACTIONS_ALL_AUG_2021.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ORDER_ID" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="PRODUCT_SKU" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="QUANTITY" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="ORDER_DATE" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="CUSTOMER_ID" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="PRODUCT_NAME" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="PRODUCT_DESC" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="PRODUCT_PRICE" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="PRODUCT_CATEGORY" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="FirstName" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="LastName" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="UserName" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="Email" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="Street" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="PostCode" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+            <Field name="Phone" size="254" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\STORE_TRANSACTIONS_ALL_AUG_2021.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="54" width="312" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Alteryx Bootcamp Project
+
+I am playing the role of an analyst from a wholesale organization. It was demanded that I should perform the following tasks:
+
+1 - Update the Orders table with the data from the August´s sellings. 
+
+2 - Update the customer data in the Customers table with the use of the informations from the August transactions spreadsheet.
+]]></Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Silver" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ORDER_ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ORDER_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_ORDER_ID" selected="False" rename="Right_ORDER_ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="534" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="0" field="Returned" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Returned = 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="642" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="738" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="ORDER_DATE" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ORDER_DATE - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="510" width="240" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>"STORE_TRANSACTIONS_ALL_AUG_2021.csv" lists all the transactions performed by the company in the August month.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Silver" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="462" y="570" width="252" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>As the August transactions dataset do not have the "Returned" column from the Returns table, we´ll have to join both Dataframes.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="0" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="282" width="252" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Because the transactions from the Inner Join are not mentioned in the Returns dataset, we´ll have to artificially generate a "Returned" column with the value as False to all the orders.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="0" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="978" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>Subset</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1026" y="558" width="192" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Attaching the whole operation´s output in the company´s Orders Table. Task 1 is completed!</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="0" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1218" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\Home\Documents\Python\Alteryx\Resoluções\12 Assignment\Orders Table SOLUTION.xlsx|||Solution</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Orders Table SOLUTION.xlsx
+Query=Solution</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="690" width="144" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This is the company´s orders table.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Silver" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1134" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CUSTOMER_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_UserName" selected="True" input="Left_" />
+                <SelectField field="Left_Email" selected="True" input="Left_" />
+                <SelectField field="Left_State" selected="True" input="Left_" />
+                <SelectField field="Left_City" selected="True" input="Left_" />
+                <SelectField field="Left_Street" selected="True" input="Left_" />
+                <SelectField field="Left_PostCode" selected="True" input="Left_" />
+                <SelectField field="Left_Phone" selected="True" input="Left_" />
+                <SelectField field="Right_FirstName" selected="True" rename="Right_FirstName" input="Right_" />
+                <SelectField field="Right_LastName" selected="True" rename="Right_LastName" input="Right_" />
+                <SelectField field="Right_UserName" selected="True" rename="Right_UserName" input="Right_" />
+                <SelectField field="Right_Email" selected="True" rename="Right_Email" input="Right_" />
+                <SelectField field="Right_State" selected="True" rename="Right_State" input="Right_" />
+                <SelectField field="Right_City" selected="True" rename="Right_City" input="Right_" />
+                <SelectField field="Right_Street" selected="True" rename="Right_Street" input="Right_" />
+                <SelectField field="Right_PostCode" selected="True" rename="Right_PostCode" input="Right_" />
+                <SelectField field="Right_Phone" selected="True" rename="Right_Phone" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1038" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="True" type="V_String" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1266" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="True" />
+            <SelectField field="Right_FirstName" selected="True" rename="FirstName" />
+            <SelectField field="Right_LastName" selected="True" rename="LastName" />
+            <SelectField field="Right_UserName" selected="True" rename="UserName" />
+            <SelectField field="Right_Email" selected="True" rename="Email" />
+            <SelectField field="Right_State" selected="True" rename="State" />
+            <SelectField field="Right_City" selected="True" rename="City" />
+            <SelectField field="Right_Street" selected="True" rename="Street" />
+            <SelectField field="Right_PostCode" selected="True" rename="PostCode" />
+            <SelectField field="Right_Phone" selected="True" rename="Phone" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1374" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="894" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="CUSTOMER_ID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1470" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="ID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1590" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\Home\Documents\Python\Alteryx\Resoluções\12 Assignment\Customers SOLUTION.xlsx|||Solution</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Customers SOLUTION.xlsx
+Query=Solution</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1002" y="6" width="192" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This small Select converts the CUSTOMERS table´s ID column to string data type.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="0" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1062" y="246" width="228" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Since a single client can request multiple orders in a month, I am extracting here unique rows based on the individual´s CUSTOMER_ID. But before it, I´ve ordered the August Transactions so that only the clients´ latest purchases are considered.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="0" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1254" y="6" width="228" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Same strategy as in Task 1. The Left Join has all the registered clients that did not made any purchase with the store in August; the inner join holds the persons from the opposite case. Both of them are agglutinated in a single dataset. With that, we finished Task 2! ]]></Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="0" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="762" y="78" width="144" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This is the company´s customer table.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Silver" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="378" width="252" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>After it, we just need to union both Join products as a single table. It is important to sort the rows according to the Date column!</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="0" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="462" y="654" width="252" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>The Inner Join product happens to be all the transactions which merchandises have been returned to the company, whereas the Left Join output are the orders with no returns.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="0" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1302" y="234" width="228" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Note: The Select right after the Inner Join removes the duplicated columns.]]></Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="0" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1086" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="ORDER_DATE" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ORDER_DATE - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="942" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\US States.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>US States.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="   State*   " size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\US States.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="State_Abbreviated" size="255" source="File: C:\Users\Home\Documents\Python\Alteryx\Course+Files\12.2 Workflow - Wholesale Order Processing\US States.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="1050" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>State</FieldFind>
+          <FieldSearch><![CDATA[   State*   ]]></FieldSearch>
+          <ReplaceFoundField>State_Abbreviated</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="786" y="294" width="144" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>A file used to replace the states full names for their abbreviations.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Silver" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="618" width="240" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>"The Completed Returns - August 2021.xlsx" mentions the orders which the products sold have been returned afterwards.</Text>
+          <Font name="Times New Roman" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Silver" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Left" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Join" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="38" Connection="Left" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="38" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="38" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Unique" />
+      <Destination ToolID="65" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="65" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>12 Assignment</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="2b4a51f2-b664-4a64-9c60-b7e5fa4b2d0a" />
+      <Telemetry>
+        <PreviousWorkflowId value="caa85ef1-257c-468c-8b3f-c4617fd43ed7" />
+        <OriginWorkflowId value="caa85ef1-257c-468c-8b3f-c4617fd43ed7" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
